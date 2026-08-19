@@ -1,15 +1,12 @@
 function Header({ name, themeColor }) {
   return (
-    <header
-      style={{
-        backgroundColor: themeColor,
-        color: "white",
-        textAlign: "center",
-        padding: "20px",
-      }}
-    >
-      <h1>{name}'s Portfolio</h1>
-      <p>Welcome to my Student Portfolio</p>
+    <header className="site-header">
+      <span className="header-badge">✦ STUDENT PORTFOLIO</span>
+      <h1>
+        {name}
+        <span className="header-accent-dot">.</span>
+      </h1>
+      <p className="header-subtitle">Web Developer in training — building with React &amp; Node</p>
     </header>
   );
 }

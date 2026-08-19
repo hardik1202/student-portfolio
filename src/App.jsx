@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import Tasks from "./pages/Tasks";        {/* ← 1. ADD THIS IMPORT */}
 import NotFound from "./pages/NotFound";
 import "./App.css";
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/tasks" element={<Tasks />} />   {/* ← 2. ADD THIS ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

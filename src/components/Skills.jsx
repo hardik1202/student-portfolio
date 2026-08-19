@@ -1,6 +1,6 @@
 function Skills({ skillList }) {
   return (
-    <section>
+    <section className="skills-card">
       <h2>Skills</h2>
 
       <ul className="skills-list">
